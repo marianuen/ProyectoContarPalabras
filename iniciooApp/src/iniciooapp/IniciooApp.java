@@ -22,32 +22,9 @@ public class IniciooApp {
         String frase = sc.nextLine();
         String cadena = frase.toLowerCase();//frase pero en minúsculas.
 
-        System.out.println(textoCaracteresTotal(contarPalabras.contarCaracteresTotal(cadena)));
-        System.out.println(textoNumeroPalabras(contarPalabras.contarNumeroPalabras(cadena)));
-        System.out.println(textoTodosCaracteres(contarPalabras.contarTodosCaracteres(cadena)));
+        System.out.println(Imprimir.textoCaracteresTotal(ContarPalabras.contarCaracteresTotal(cadena)));
+        System.out.println(Imprimir.textoNumeroPalabras(ContarPalabras.contarNumeroPalabras(cadena)));
+        System.out.println(Imprimir.textoTodosCaracteres(ContarPalabras.contarTodosCaracteres(cadena)));
 
-    }
-
-
-    static String textoCaracteresTotal(int total) {
-
-        return "Cantidad de caracteres: " + total;
-    }
-
-    static String textoNumeroPalabras(int total) {
-
-        return "Cantidad de palabras: " + total;
-    }
-
-    static String textoTodosCaracteres(int[] contador) {
-        String resultado = "";
-        for (int i = 0; i < contador.length; i++) {
-            if (contador[i] > 0 && letras[i] != ' ') {
-                resultado += "Cantidad de " + letras[i] + ": " + contador[i] + "\n";
-            }
-        }
-        return resultado;
-    }
-
-    
+    } 
 }
