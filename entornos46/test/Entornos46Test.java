@@ -19,6 +19,15 @@ public class Entornos46Test {
         assertEquals(4, Calculos.contarCaracteresTotal("hola"));
         assertEquals(7, Calculos.contarCaracteresTotal("hola que"));
     }
+    
+    @Test
+    public void contarNumeroPalabrasTest() {
+
+        assertEquals(1, Calculos.contarNumeroPalabras("hola"));
+        assertEquals(2, Calculos.contarNumeroPalabras("hola que"));
+        assertEquals(2, Calculos.contarNumeroPalabras("hola  que"));
+
+    }
         
 
     
