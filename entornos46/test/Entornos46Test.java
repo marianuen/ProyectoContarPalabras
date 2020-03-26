@@ -47,5 +47,12 @@ public class Entornos46Test {
         assertEquals("Cantidad de caracteres: " + 2, Imprimir.textoCaracteresTotal(2));
 
     }
+    
+    @Test
+    public void textoNumeroPalabras() {
+
+        assertEquals("Cantidad de palabras: " + 3, Imprimir.textoNumeroPalabras(3));
+
+    }
 
 }
