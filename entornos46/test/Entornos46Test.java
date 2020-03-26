@@ -5,6 +5,7 @@
  */
 
 import entornos46.Calculos;
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -13,13 +14,13 @@ import static org.junit.Assert.*;
  * @author maria
  */
 public class Entornos46Test {
-    
-   @Test
+
+    @Test
     public void contarCaracteresTotalTest() {
         assertEquals(4, Calculos.contarCaracteresTotal("hola"));
         assertEquals(7, Calculos.contarCaracteresTotal("hola que"));
     }
-    
+
     @Test
     public void contarNumeroPalabrasTest() {
 
@@ -28,9 +29,15 @@ public class Entornos46Test {
         assertEquals(2, Calculos.contarNumeroPalabras("hola  que"));
 
     }
-        
 
-    
-    
-   
+    @Test
+    public void contarTodosCaracteresTest() {
+
+        int[] miArray = new int[]{1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        Assert.assertArrayEquals(miArray, Calculos.contarTodosCaracteres("hola"));
+
+    }
+
 }
