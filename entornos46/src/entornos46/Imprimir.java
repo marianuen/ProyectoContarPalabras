@@ -9,17 +9,17 @@ import static entornos46.Entornos46.letras;
 public class Imprimir {
     
         
-    static String textoCaracteresTotal (int total){
+    public static String textoCaracteresTotal (int total){
         
         return "Cantidad de caracteres: " + total;
     }
     
-    static String textoNumeroPalabras (int total){
+    public static String textoNumeroPalabras (int total){
         
         return "Cantidad de palabras: " + total;
     }
     
-    static String textoTodosCaracteres (int[] contador){
+    public static String textoTodosCaracteres (int[] contador){
         String resultado = "";
         for (int i = 0; i < contador.length; i++) {
             if (contador[i] > 0 && letras[i] != ' ') {
