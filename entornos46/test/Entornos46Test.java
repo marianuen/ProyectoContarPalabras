@@ -5,6 +5,7 @@
  */
 
 import entornos46.Calculos;
+import entornos46.Imprimir;
 import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -37,6 +38,13 @@ public class Entornos46Test {
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
         Assert.assertArrayEquals(miArray, Calculos.contarTodosCaracteres("hola"));
+
+    }
+
+    @Test
+    public void textoCaracteresTotalTest() {
+
+        assertEquals("Cantidad de caracteres: " + 2, Imprimir.textoCaracteresTotal(2));
 
     }
 
